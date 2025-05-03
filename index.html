@@ -20,8 +20,11 @@
         }
         .recipe-img {
             width: 100%;
+            max-height: 400px;
+            object-fit: cover;
             border-radius: 8px;
             margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .cta-button {
             display: inline-block;
@@ -32,6 +35,8 @@
             border-radius: 4px;
             margin: 20px 0;
             font-weight: bold;
+            cursor: pointer;
+            border: none;
         }
         form {
             background: #fff;
@@ -51,32 +56,57 @@
             margin-top: 40px;
             color: #777;
         }
+        .legal-links a {
+            color: #e67e22;
+            text-decoration: none;
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
     <h1>Salsa de Maíz: Un Toque Tradicional</h1>
     
-    <!-- Изображение 1 -->
-    <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29ybiUyMHNhdWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Salsa de maíz" class="recipe-img">
+    <!-- Изображение 1: Unsplash (CC0) -->
+    <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29ybiUyMHNhdWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=80" 
+         alt="Salsa de maíz en un bowl" 
+         class="recipe-img">
     
     <p>La salsa de maíz es una receta deliciosa para acompañar una amplia variedad de platos. De hecho, las carnes, las pastas rellenas y los vegetales son algunos de ejemplos en los que se la emplea.</p>
     
-    <!-- Изображение 2 -->
-    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Platos con salsa de maíz" class="recipe-img">
+    <!-- Изображение 2: Pexels (CC0) -->
+    <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" 
+         alt="Plato con salsa de maíz" 
+         class="recipe-img">
     
     <p>Si bien no se conoce con certeza cuál es el origen de esta receta, se sabe que el maíz es un ingrediente de suma importancia en la gastronomía de diferentes países centroamericanos. Por lo que podría provenir de estas zonas.</p>
     
-    <!-- Форма подписки -->
-    <form action="https://formspree.io/f/ваш-email" method="POST">
+    <!-- Форма подписки (неактивная) -->
+    <form id="newsletter-form">
         <h2>¡Suscríbete para más recetas!</h2>
-        <input type="text" name="nombre" placeholder="Tu nombre" required>
-        <input type="email" name="email" placeholder="Tu correo electrónico" required>
-        <button type="submit" class="cta-button">Recibir recetas</button>
+        <input type="text" placeholder="Tu nombre">
+        <input type="email" placeholder="Tu correo electrónico">
+        <button type="button" class="cta-button" onclick="showSubscriptionMessage()">Recibir recetas</button>
         <p><small>No compartiremos tu información. Odiamos el spam.</small></p>
     </form>
 
     <footer>
-        <p>© 2024 Recetas Tradicionales | Desarrollado con ❤️</p>
+        <div class="legal-links">
+            <a href="privacy.html">Política de Privacidad</a>
+            <a href="terms.html">Términos y Condiciones</a>
+        </div>
+        <p>© 2024 Recetas Tradicionales</p>
     </footer>
+
+    <script>
+        function showSubscriptionMessage() {
+            alert('¡Gracias por tu interés! Pronto recibirás nuestras mejores recetas.');
+        }
+        
+        // Заглушка для формы
+        document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            showSubscriptionMessage();
+        });
+    </script>
 </body>
 </html>
