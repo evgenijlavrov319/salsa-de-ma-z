@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salsa de Maíz Tradicional | Recetas Auténticas Mexicanas</title>
-    <meta name="description" content="Descubra el arte ancestral de preparar salsa de maíz tradicional mexicana con nuestra guía completa que preserva técnicas prehispánicas y sabores auténticos">
+    <title>Salsa de Maíz Tradicional Mexicana - Recetas Ancestrales Auténticas</title>
+    <meta name="description" content="Receta completa de salsa de maíz tradicional mexicana con historia, técnicas ancestrales y variantes regionales. Aprenda los secretos culinarios de Oaxaca.">
+    <meta name="author" content="Cocina Tradicional Mexicana">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -15,7 +16,7 @@
             color: #333;
             background-color: #fff9f2;
         }
-        h1, h2, h3 {
+        h1, h2, h3, h4 {
             color: #c4450c;
             text-align: center;
             margin-top: 0;
@@ -33,6 +34,13 @@
         h3 {
             font-size: 1.4em;
             margin-bottom: 15px;
+            text-align: left;
+        }
+        h4 {
+            font-size: 1.2em;
+            margin: 25px 0 10px;
+            text-align: left;
+            color: #e67e22;
         }
         .content-section {
             margin-bottom: 50px;
@@ -106,11 +114,11 @@
             font-size: 0.9em;
             color: #777;
         }
-        ul {
-            padding-left: 20px;
+        ul, ol {
+            padding-left: 25px;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
         a {
             color: #e67e22;
@@ -121,8 +129,25 @@
             color: #d35400;
             text-decoration: underline;
         }
+        .recipe-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        .ingredients-list {
+            columns: 2;
+            column-gap: 30px;
+        }
+        .history-note {
+            background: #f5e9dd;
+            padding: 20px;
+            border-left: 4px solid #e67e22;
+            margin: 25px 0;
+            font-style: italic;
+        }
 
-        /* Мобильная адаптация */
         @media (max-width: 768px) {
             body {
                 padding: 15px;
@@ -146,112 +171,170 @@
                 padding: 20px;
                 margin: 30px auto;
             }
-            .cta-button {
-                padding: 12px 20px;
-                font-size: 1em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.6em;
-            }
-            h2 {
-                font-size: 1.3em;
-            }
-            .subscription-form {
-                padding: 15px;
-            }
-            input[type="text"],
-            input[type="email"] {
-                padding: 10px 12px;
+            .ingredients-list {
+                columns: 1;
             }
         }
     </style>
 </head>
 <body>
-    <h1>El Secreto Ancestral de la Salsa de Maíz Mexicana</h1>
+    <h1>El Arte Ancestral de la Salsa de Maíz Mexicana</h1>
     
     <div class="content-section">
-        <img src="images/salsa-maiz.jpg" alt="Auténtica salsa de maíz tradicional servida en molcajete de piedra volcánica" class="recipe-img">
-        <h2>Preservando la Tradición Milenaria</h2>
-        <p>En el corazón de la gastronomía mexicana yace un tesoro culinario que ha alimentado a generaciones: la salsa de maíz. Este sitio nace de nuestra pasión por rescatar y compartir las recetas auténticas que han sobrevivido al paso del tiempo, transmitidas oralmente por abuelas y guardianes de la tradición.</p>
+        <img src="images/salsa-maiz.jpg" alt="Auténtica salsa de maíz tradicional servida en molcajete de piedra volcánica con tortillas frescas" class="recipe-img">
         
-        <p>Ofrecemos un viaje culinario que va más allá de simples instrucciones:</p>
+        <h2>Un Legado Culinario de 3,000 Años</h2>
+        <p>La salsa de maíz no es simplemente un acompañamiento en la cocina mexicana; es un símbolo de identidad cultural que se remonta a las civilizaciones mesoamericanas. Los registros arqueológicos muestran que los olmecas, considerados la "cultura madre" de Mesoamérica, ya preparaban versiones primitivas de esta salsa alrededor del año 1,500 a.C.</p>
+        
+        <div class="history-note">
+            <p>Según el Códice Florentino, documento del siglo XVI escrito por fray Bernardino de Sahagún, los aztecas consideraban al maíz como "nuestra carne, nuestros huesos", y lo preparaban en salsas ceremoniales durante los festivales en honor a Centéotl, dios del maíz.</p>
+        </div>
+        
+        <h3>El Maíz en la Cosmovisión Mexicana</h3>
+        <p>Para entender la importancia de esta salsa, debemos comprender el papel sagrado del maíz:</p>
         <ul>
-            <li><strong>Recetas verificadas:</strong> Cada preparación ha sido validada por chefs tradicionales y cocineras indígenas de comunidades como Oaxaca, Michoacán y Puebla.</li>
-            <li><strong>Técnicas ancestrales:</strong> Desde el nixtamalizado artesanal hasta el molido en metate, enseñamos los métodos originales que definen el auténtico sabor.</li>
-            <li><strong>Contexto cultural:</strong> Exploramos el significado ritual del maíz en las culturas mesoamericanas y su evolución en la cocina contemporánea.</li>
-            <li><strong>Guía de ingredientes:</strong> Dónde encontrar y cómo seleccionar las variedades de maíz criollo, chiles autóctonos y hierbas tradicionales.</li>
-            <li><strong>Variantes regionales:</strong> Cómo se prepara esta salsa en diferentes estados de México, cada una con su identidad única.</li>
+            <li><strong>Creación del hombre:</strong> El Popol Vuh narra que los dioses crearon al hombre a partir de masa de maíz después de intentos fallidos con barro y madera.</li>
+            <li><strong>Calendario agrícola:</strong> Las fases de siembra, cultivo y cosecha regían la vida social y religiosa.</li>
+            <li><strong>Variedades sagradas:</strong> Cada color de maíz (blanco, amarillo, rojo, azul, negro) tenía asociaciones divinas específicas.</li>
         </ul>
-        <p>Nuestro compromiso es con la autenticidad. No comercializamos productos ni versiones modernizadas, solo compartimos el conocimiento ancestral en su forma más pura.</p>
     </div>
     
     <div class="content-section">
-        <h2>La Receta Sagrada del Maíz</h2>
-        <p>La salsa que presentamos es una recreación fiel de las preparaciones que se hacían en las comunidades zapotecas del Valle de Oaxaca, utilizando solo ingredientes que existían antes de la conquista:</p>
+        <h2>Receta Ancestral de Salsa de Maíz</h2>
+        <p>Esta versión proviene específicamente de la región zapoteca de los Valles Centrales de Oaxaca, donde se ha transmitido oralmente por generaciones en la comunidad de Teotitlán del Valle.</p>
         
-        <img src="images/maiz-historia.jpg" alt="Maíz criollo mexicano de colores cultivado con técnicas tradicionales" class="recipe-img">
+        <div class="recipe-card">
+            <h3>Ingredientes (para 4 personas)</h3>
+            <div class="ingredients-list">
+                <ul>
+                    <li>2 tazas de maíz criollo nixtamalizado (preferiblemente maíz azul)</li>
+                    <li>3 chiles pasilla oaxaqueños secos</li>
+                    <li>2 chiles de agua frescos</li>
+                    <li>1 diente de ajo criollo</li>
+                    <li>1/2 cebolla blanca mediana</li>
+                    <li>1 cucharadita de sal mineral (sal de Tehuantepec)</li>
+                    <li>1/4 de taza de hojas de pitiona fresca (hierba santa)</li>
+                    <li>1/2 litro de agua purificada</li>
+                    <li>1 piedra de molcajete (opcional pero auténtico)</li>
+                </ul>
+            </div>
+            
+            <h3>Preparación Paso a Paso</h3>
+            <h4>Fase 1: Nixtamalización del Maíz</h4>
+            <ol>
+                <li>Lavar el maíz con agua corriente para eliminar impurezas</li>
+                <li>En una olla de barro, mezclar el maíz con 2 litros de agua y 1 cucharada de cal alimentaria</li>
+                <li>Hervir a fuego medio durante 45 minutos, removiendo ocasionalmente</li>
+                <li>Retirar del fuego y dejar reposar toda la noche (12-14 horas)</li>
+                <li>Al día siguiente, enjuagar 3 veces hasta que el agua salga limpia</li>
+            </ol>
+            
+            <h4>Fase 2: Preparación de Ingredientes</h4>
+            <ol>
+                <li>Tostar ligeramente los chiles secos en comal de barro hasta que desprendan aroma</li>
+                <li>Remojar los chiles en agua tibia durante 20 minutos</li>
+                <li>Asar los chiles frescos, ajo y cebolla hasta que estén ligeramente ahumados</li>
+                <li>Desvenar los chiles y reservar las semillas (se usan después para ajustar el picor)</li>
+            </ol>
+            
+            <img src="images/maiz-historia.jpg" alt="Proceso de nixtamalización tradicional del maíz en Oaxaca" class="recipe-img">
+            
+            <h4>Fase 3: Molido Tradicional</h4>
+            <p><strong>Técnica ancestral:</strong> El molido en metate (piedra volcánica) es crucial para la textura auténtica.</p>
+            <ol>
+                <li>Colocar el maíz nixtamalizado en el metate</li>
+                <li>Moler con movimiento circular usando la mano del metate (tejolote)</li>
+                <li>Añadir gradualmente los demás ingredientes</li>
+                <li>Continuar moliendo hasta obtener una pasta homogénea (aproximadamente 30-40 minutos)</li>
+            </ol>
+            
+            <h4>Fase 4: Cocción Final</h4>
+            <ol>
+                <li>Transferir la mezcla a una olla de barro</li>
+                <li>Añadir el agua poco a poco hasta alcanzar consistencia deseada</li>
+                <li>Cocinar a fuego lento durante 25 minutos, revolviendo constantemente con cuchara de madera</li>
+                <li>Rectificar sazón con sal y semillas reservadas</li>
+                <li>Servir en cazuelas de barro con tortillas hechas a mano</li>
+            </ol>
+        </div>
         
-        <h3>El Maíz: Más Que Un Ingrediente</h3>
-        <p>Para los pueblos originarios de México, el maíz no era simplemente un alimento, sino la base de su cosmovisión. Según el Popol Vuh, el libro sagrado de los mayas, los dioses crearon al hombre a partir del maíz después de varios intentos fallidos con otros materiales.</p>
-        
-        <p>Nuestra receta utiliza exclusivamente maíz criollo nixtamalizado, procesado según el método tradicional que incluye:</p>
+        <h3>Secretos de las Abuelas</h3>
         <ul>
-            <li>Cocción con cal mineral (nixtamalización)</li>
-            <li>Reposo de 12 a 14 horas</li>
-            <li>Lavado cuidadoso para eliminar el nejayote</li>
-            <li>Molido en metate de piedra volcánica</li>
+            <li><strong>Tiempo lunar:</strong> Las cocineras tradicionales prefieren preparar la salsa durante luna creciente, cuando dicen que el maíz "abraza mejor los sabores".</li>
+            <li><strong>Temperatura del agua:</strong> Nunca usar agua recién hervida para remojar los chiles, ya que destruye sus aceites esenciales.</li>
+            <li><strong>Orden de molido:</strong> Primero el maíz, luego los chiles, después los aromáticos. Este orden afecta la textura final.</li>
+        </ul>
+    </div>
+    
+    <div class="content-section">
+        <h2>Variantes Regionales</h2>
+        <p>Esta receta base tiene múltiples adaptaciones según la región:</p>
+        
+        <h3>Versión Yucateca (Salsa de Maíz Colado)</h3>
+        <ul>
+            <li>Usa maíz blanco y chiles habaneros</li>
+            <li>Incluye semillas de pepita molida</li>
+            <li>Se cuela por tela de manta para textura ultra suave</li>
+            <li>Acompaña tradicionalmente cochinita pibil</li>
         </ul>
         
-        <h3>Los Secretos del Sabor</h3>
-        <p>La autenticidad de esta salsa reside en detalles que las recetas modernas suelen omitir:</p>
+        <h3>Versión Poblana (Salsa de Maíz con Chileatole)</h3>
         <ul>
-            <li>Uso de chiles secados al sol (no deshidratadores eléctricos)</li>
-            <li>Sal mineral no refinada</li>
-            <li>Hierbas de campo recolectadas en su temporada</li>
-            <li>Tiempos de cocción precisos basados en ciclos lunares</li>
+            <li>Combina maíz con hierbas de la región (epazote, hoja de aguacate)</li>
+            <li>Lleva trozos de elote fresco</li>
+            <li>Espesada con masa de maíz</li>
+            <li>Se sirve caliente en cazuelas de talavera</li>
+        </ul>
+        
+        <h3>Versión Norteña (Salsa de Maíz con Carne Seca)</h3>
+        <ul>
+            <li>Incorpora machaca (carne seca desmenuzada)</li>
+            <li>Usa chiles de árbol y chiltepín</li>
+            <li>Preparada en sartén de hierro fundido</li>
+            <li>Acompaña con tortillas de harina</li>
         </ul>
     </div>
 
     <div class="subscription-form">
-        <h3>Únase a Nuestra Comunidad Tradicional</h3>
-        <p>Reciba en su correo nuestras recetas más valiosas, junto con:</p>
+        <h3>Reciba Más Recetas Ancestrales</h3>
+        <p>Únase a nuestro círculo culinario y reciba:</p>
         <ul>
+            <li>Recetas exclusivas de comunidades indígenas</li>
+            <li>Tutoriales detallados de técnicas tradicionales</li>
+            <li>Calendario de temporadas de ingredientes autóctonos</li>
             <li>Historias orales de cocineras tradicionales</li>
-            <li>Calendario de ceremonias relacionadas con el maíz</li>
-            <li>Guías de mercados locales donde encontrar ingredientes auténticos</li>
-            <li>Tutoriales exclusivos de técnicas ancestrales</li>
         </ul>
         <form id="newsletter-form">
             <div class="form-group">
-                <label for="name">Su nombre completo:</label>
-                <input type="text" id="name" name="name" required placeholder="Como lo conocen en su comunidad">
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="name" required placeholder="Como lo conocen en su familia">
             </div>
             <div class="form-group">
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required placeholder="Donde le gustaría recibir esta sabiduría">
+                <input type="email" id="email" name="email" required placeholder="Donde le gustaría recibir estas enseñanzas">
             </div>
-            <button type="submit" class="cta-button">Quiero Recibir la Tradición</button>
+            <div class="form-group">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Acepto la política de privacidad y recibir información sobre cocina tradicional</label>
+            </div>
+            <button type="submit" class="cta-button">Unirme a la Tradición</button>
             <div class="privacy-notice">
-                Al suscribirse, honra nuestro <a href="privacidad.html" target="_blank">Pacto de Confidencialidad</a> inspirado en los códigos éticos de las comunidades indígenas. 
-                Jamás compartiremos su información ni le enviaremos publicidad. 
-                Cada correo contendrá conocimiento valioso que puede transmitir a sus descendientes, tal como se ha hecho por siglos.
+                Respetamos su privacidad. Nunca compartiremos su información. Puede darse de baja en cualquier momento. Consulte nuestra <a href="privacidad.html" target="_blank">Política de Privacidad</a> completa.
             </div>
         </form>
     </div>
 
     <footer>
-        <p><a href="privacidad.html">Pacto de Confidencialidad</a> | <a href="terminos.html">Compromisos Sagrados</a> | <a href="contacto.html">Envíe un Mensajero</a></p>
-        <p>© 2023 Guardianes del Maíz Ancestral - Todos los conocimientos preservados</p>
-        <p>Este camino gastronómico honra a todos los abuelos y abuelas que mantuvieron viva esta sabiduría</p>
+        <p><a href="privacidad.html">Política de Privacidad</a> | <a href="terminos.html">Términos de Uso</a> | <a href="contacto.html">Contacto</a> | <a href="sobre-nosotros.html">Sobre Nosotros</a></p>
+        <p>© 2023 Cocina Tradicional Mexicana - Todos los derechos reservados</p>
+        <p>Este sitio forma parte de la Red de Preservación Gastronómica de México</p>
+        <p>Las recetas aquí presentadas son patrimonio cultural intangible</p>
     </footer>
 
     <script>
         document.getElementById('newsletter-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('¡Bienvenido a la comunidad guardiana del maíz! Hemos enviado a su correo la "Receta del Abuelo Francisco", la primera de muchas enseñanzas que compartiremos.');
+            alert('¡Gracias por unirse a nuestra comunidad! Hemos enviado a su correo la "Guía de Ingredientes Autóctonos" como regalo de bienvenida.');
             this.reset();
         });
     </script>
