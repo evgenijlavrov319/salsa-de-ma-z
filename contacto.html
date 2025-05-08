@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Salsa de Maíz Tradicional</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 25px;
+            color: #333;
+        }
+        h1 {
+            color: #c4450c;
+        }
+        .contact-info {
+            background-color: #fff9f2;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        form {
+            margin-top: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background: #e67e22;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contacto</h1>
+    
+    <div class="contact-info">
+        <h2>Información de Contacto</h2>
+        <p><strong>Correo electrónico:</strong> contacto@recetastradicionales.com</p>
+        <p><strong>Horario de atención:</strong> Lunes a Viernes, 9:00 - 18:00 (GMT-6)</p>
+        <p><strong>Dirección:</strong> Apartado Postal 123, Ciudad de México, México</p>
+    </div>
+    
+    <h2>Formulario de Contacto</h2>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+    
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Gracias por su mensaje. Nos pondremos en contacto pronto.');
+            this.reset();
+        });
+    </script>
+    
+    <p><a href="index.html">← Volver al inicio</a></p>
+</body>
+</html>
