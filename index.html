@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salsa de Maíz Tradicional | Recetas Auténticas Mexicanas</title>
-    <meta name="description" content="Aprenda a preparar auténtica salsa de maíz tradicional mexicana con recetas ancestrales y técnicas originales">
+    <meta name="description" content="Descubra el arte ancestral de preparar salsa de maíz tradicional mexicana con nuestra guía completa que preserva técnicas prehispánicas y sabores auténticos">
     <style>
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.8;
             max-width: 900px;
             margin: 0 auto;
-            padding: 25px;
+            padding: 20px;
             color: #333;
             background-color: #fff9f2;
         }
         h1, h2, h3 {
             color: #c4450c;
             text-align: center;
+            margin-top: 0;
         }
         h1 {
-            font-size: 2.2em;
+            font-size: 2.5em;
             margin-bottom: 30px;
             border-bottom: 2px solid #e0c9b8;
             padding-bottom: 15px;
         }
+        h2 {
+            font-size: 1.8em;
+            margin: 40px 0 20px;
+        }
+        h3 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
         .content-section {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             text-align: justify;
+            padding: 0 10px;
         }
         .recipe-img {
             width: 100%;
@@ -36,13 +46,14 @@
             border-radius: 10px;
             margin: 25px 0;
             border: 1px solid #e0c9b8;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .subscription-form {
             background: #fff;
             padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            margin: 40px auto;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            margin: 50px auto;
             max-width: 600px;
         }
         .form-group {
@@ -52,97 +63,195 @@
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
+            color: #555;
         }
         input[type="text"],
         input[type="email"] {
             width: 100%;
-            padding: 12px;
+            padding: 12px 15px;
             border: 1px solid #ddd;
             border-radius: 6px;
             box-sizing: border-box;
+            font-size: 16px;
         }
         .cta-button {
             background: #e67e22;
             color: white;
             border: none;
-            padding: 14px 28px;
+            padding: 15px 30px;
             font-size: 1.1em;
             border-radius: 6px;
             cursor: pointer;
             width: 100%;
-            transition: background 0.3s;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            letter-spacing: 0.5px;
         }
         .cta-button:hover {
             background: #d35400;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(210, 84, 0, 0.3);
         }
         .privacy-notice {
-            font-size: 0.8em;
+            font-size: 0.85em;
             color: #666;
             margin-top: 20px;
+            line-height: 1.6;
         }
         footer {
             text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
+            margin-top: 60px;
+            padding-top: 30px;
             border-top: 1px solid #eee;
             font-size: 0.9em;
             color: #777;
         }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #e67e22;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #d35400;
+            text-decoration: underline;
+        }
+
+        /* Мобильная адаптация */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 1.8em;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-size: 1.5em;
+                margin: 30px 0 15px;
+            }
+            .content-section {
+                margin-bottom: 30px;
+            }
+            .recipe-img {
+                margin: 15px 0;
+            }
+            .subscription-form {
+                padding: 20px;
+                margin: 30px auto;
+            }
+            .cta-button {
+                padding: 12px 20px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .subscription-form {
+                padding: 15px;
+            }
+            input[type="text"],
+            input[type="email"] {
+                padding: 10px 12px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Salsa de Maíz: Receta Tradicional Mexicana</h1>
+    <h1>El Secreto Ancestral de la Salsa de Maíz Mexicana</h1>
     
     <div class="content-section">
-        <img src="images/salsa-maiz.jpg" alt="Salsa de maíz tradicional servida en molcajete de piedra" class="recipe-img">
-        <h2>Nuestro Contenido</h2>
-        <p>Este sitio está dedicado exclusivamente a preservar y compartir auténticas recetas mexicanas de salsa de maíz, transmitidas por generaciones. Ofrecemos:</p>
+        <img src="images/salsa-maiz.jpg" alt="Auténtica salsa de maíz tradicional servida en molcajete de piedra volcánica" class="recipe-img">
+        <h2>Preservando la Tradición Milenaria</h2>
+        <p>En el corazón de la gastronomía mexicana yace un tesoro culinario que ha alimentado a generaciones: la salsa de maíz. Este sitio nace de nuestra pasión por rescatar y compartir las recetas auténticas que han sobrevivido al paso del tiempo, transmitidas oralmente por abuelas y guardianes de la tradición.</p>
+        
+        <p>Ofrecemos un viaje culinario que va más allá de simples instrucciones:</p>
         <ul>
-            <li>Recetas verificadas por chefs tradicionales</li>
-            <li>Técnicas ancestrales de preparación</li>
-            <li>Información histórica y cultural</li>
-            <li>Consejos de ingredientes autóctonos</li>
+            <li><strong>Recetas verificadas:</strong> Cada preparación ha sido validada por chefs tradicionales y cocineras indígenas de comunidades como Oaxaca, Michoacán y Puebla.</li>
+            <li><strong>Técnicas ancestrales:</strong> Desde el nixtamalizado artesanal hasta el molido en metate, enseñamos los métodos originales que definen el auténtico sabor.</li>
+            <li><strong>Contexto cultural:</strong> Exploramos el significado ritual del maíz en las culturas mesoamericanas y su evolución en la cocina contemporánea.</li>
+            <li><strong>Guía de ingredientes:</strong> Dónde encontrar y cómo seleccionar las variedades de maíz criollo, chiles autóctonos y hierbas tradicionales.</li>
+            <li><strong>Variantes regionales:</strong> Cómo se prepara esta salsa en diferentes estados de México, cada una con su identidad única.</li>
         </ul>
-        <p>No vendemos productos, solo compartimos conocimiento culinario.</p>
+        <p>Nuestro compromiso es con la autenticidad. No comercializamos productos ni versiones modernizadas, solo compartimos el conocimiento ancestral en su forma más pura.</p>
     </div>
     
     <div class="content-section">
-        <h2>Receta Original</h2>
-        <p>La salsa de maíz que presentamos sigue fielmente la tradición de las comunidades indígenas de Oaxaca, utilizando solo ingredientes naturales:</p>
-        <img src="images/maiz-historia.jpg" alt="Maíz criollo mexicano cultivado tradicionalmente" class="recipe-img">
+        <h2>La Receta Sagrada del Maíz</h2>
+        <p>La salsa que presentamos es una recreación fiel de las preparaciones que se hacían en las comunidades zapotecas del Valle de Oaxaca, utilizando solo ingredientes que existían antes de la conquista:</p>
+        
+        <img src="images/maiz-historia.jpg" alt="Maíz criollo mexicano de colores cultivado con técnicas tradicionales" class="recipe-img">
+        
+        <h3>El Maíz: Más Que Un Ingrediente</h3>
+        <p>Para los pueblos originarios de México, el maíz no era simplemente un alimento, sino la base de su cosmovisión. Según el Popol Vuh, el libro sagrado de los mayas, los dioses crearon al hombre a partir del maíz después de varios intentos fallidos con otros materiales.</p>
+        
+        <p>Nuestra receta utiliza exclusivamente maíz criollo nixtamalizado, procesado según el método tradicional que incluye:</p>
+        <ul>
+            <li>Cocción con cal mineral (nixtamalización)</li>
+            <li>Reposo de 12 a 14 horas</li>
+            <li>Lavado cuidadoso para eliminar el nejayote</li>
+            <li>Molido en metate de piedra volcánica</li>
+        </ul>
+        
+        <h3>Los Secretos del Sabor</h3>
+        <p>La autenticidad de esta salsa reside en detalles que las recetas modernas suelen omitir:</p>
+        <ul>
+            <li>Uso de chiles secados al sol (no deshidratadores eléctricos)</li>
+            <li>Sal mineral no refinada</li>
+            <li>Hierbas de campo recolectadas en su temporada</li>
+            <li>Tiempos de cocción precisos basados en ciclos lunares</li>
+        </ul>
     </div>
 
     <div class="subscription-form">
-        <h3>Reciba Recetas Auténticas</h3>
-        <p>Suscríbase para recibir nuestras recetas tradicionales:</p>
+        <h3>Únase a Nuestra Comunidad Tradicional</h3>
+        <p>Reciba en su correo nuestras recetas más valiosas, junto con:</p>
+        <ul>
+            <li>Historias orales de cocineras tradicionales</li>
+            <li>Calendario de ceremonias relacionadas con el maíz</li>
+            <li>Guías de mercados locales donde encontrar ingredientes auténticos</li>
+            <li>Tutoriales exclusivos de técnicas ancestrales</li>
+        </ul>
         <form id="newsletter-form">
             <div class="form-group">
-                <label for="name">Nombre completo:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="name">Su nombre completo:</label>
+                <input type="text" id="name" name="name" required placeholder="Como lo conocen en su comunidad">
             </div>
             <div class="form-group">
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required placeholder="Donde le gustaría recibir esta sabiduría">
             </div>
-            <button type="submit" class="cta-button">Suscribirse Gratis</button>
+            <button type="submit" class="cta-button">Quiero Recibir la Tradición</button>
             <div class="privacy-notice">
-                Al suscribirse, acepta nuestra <a href="privacidad.html" target="_blank">Política de Privacidad</a>. 
-                Solo le enviaremos contenido relacionado con recetas tradicionales mexicanas. 
-                Puede darse de baja en cualquier momento.
+                Al suscribirse, honra nuestro <a href="privacidad.html" target="_blank">Pacto de Confidencialidad</a> inspirado en los códigos éticos de las comunidades indígenas. 
+                Jamás compartiremos su información ni le enviaremos publicidad. 
+                Cada correo contendrá conocimiento valioso que puede transmitir a sus descendientes, tal como se ha hecho por siglos.
             </div>
         </form>
     </div>
 
     <footer>
-        <p><a href="privacidad.html">Política de Privacidad</a> | <a href="terminos.html">Términos de Uso</a> | <a href="contacto.html">Contacto</a></p>
-        <p>© 2023 Cocina Tradicional Mexicana - Todos los derechos reservados</p>
-        <p>Este sitio no está afiliado a ninguna marca comercial</p>
+        <p><a href="privacidad.html">Pacto de Confidencialidad</a> | <a href="terminos.html">Compromisos Sagrados</a> | <a href="contacto.html">Envíe un Mensajero</a></p>
+        <p>© 2023 Guardianes del Maíz Ancestral - Todos los conocimientos preservados</p>
+        <p>Este camino gastronómico honra a todos los abuelos y abuelas que mantuvieron viva esta sabiduría</p>
     </footer>
 
     <script>
         document.getElementById('newsletter-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('¡Gracias por suscribirse! En breve recibirá su primera receta.');
+            alert('¡Bienvenido a la comunidad guardiana del maíz! Hemos enviado a su correo la "Receta del Abuelo Francisco", la primera de muchas enseñanzas que compartiremos.');
             this.reset();
         });
     </script>
